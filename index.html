@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta property="og:title" content="pOps: Photo-Inspired Diffusion Operators"/>
+    <meta property="og:url" content="https://ConceptLab.github.io/ConceptLab/"/>
+    <meta property="og:image" content="static/images/og_tag_header_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <title>pOps</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+    <link rel="icon" href="static/images/og_tag_header_image.png">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+<body>
+
+
+<section class="publication-header">
+    <div class="hero-body">
+        <div class="container is-max-widescreen">
+            <div class="column has-text-centered">
+                <h1 class="title is-1 publication-title">p<span class="o-pops">O</span>ps: Photo-Inspired Diffusion <span class="o-operators">O</span>perators</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="publication-author-block">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <div class="is-size-3 publication-authors">
+                        <span class="author-block">Anonymous Authors</span>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+              
+              <span class="link-block">
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                <span class="link-block">
+                <a href="https://github.com/pOpsPaper/pOps" target="_blank"
+                   class="external-link button is-normal is-rounded">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+              </span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero">
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="item">
+                        <div class="column is-centered has-text-centered">
+                            <img src="static/figures/teaser_pops.jpg" alt="teaser image" width="95%"/>
+                            <h2 class="subtitle">
+                                Different operators trained using pOps. Our method learns operators that are applied directly in the image embedding space, resulting in a variety of semantic operations that can then be realized as images using an image diffusion model.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">🎶 Abstract Video 🎶</h2>
+                    <div class="content has-text-justified">
+                              <div class="video-wrapper" height="100%">
+                                <video src="./static/figures/teaser_video.mp4" ></video>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-three-fifths has-text-centered">
+          <h4 class="title is-4">Generative Equations</h4>
+          <div class="column is-centered has-text-centered">
+            <div id="concept-carousel" class="carousel results-carousel">
+                <div class="column is-centered has-text-centered">
+                    <img src="static/figures/carousel_edits/illustration_equation.jpg" alt="Dog Equation" width="95%"/>
+                    <img src="static/figures/carousel_edits/colorful_equation.jpg" alt="Dog Equation" width="95%"/>
+                    <img src="static/figures/carousel_edits/melting_dog.jpg" alt="Dog Equation" width="95%"/>
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <img src="static/figures/carousel_edits/melting_equation.jpg" alt="Dog Equation" width="95%"/>
+                    <img src="static/figures/carousel_edits/enormous_equation.jpg" alt="Dog Equation" width="95%"/>
+                    <img src="static/figures/carousel_edits/fluffy_equation.jpg" alt="Dog Equation" width="95%"/>
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <img src="static/figures/carousel_edits/apple_equation.jpg" alt="Apple Equation" width="95%"/>
+                    <img src="static/figures/carousel_edits/glowing_equation.jpg" alt="Dog Equation" width="95%"/>
+                    <img src="static/figures/carousel_edits/winged_equation.jpg" alt="Dog Equation" width="95%"/>
+                </div>
+            </div>
+
+  
+            </div>
+        </div>
+  
+        <div class="column is-three-fifths has-text-centered">
+          <h4 class="title is-4">Generative Trees</h4>
+          <div class="column is-centered has-text-centered">
+            <div class="column is-centered has-text-centered">
+                <img src="static/figures/generative_tree.jpg" alt="art1" width="80%"/>
+            </div>
+  
+  
+          <div class="content has-text-centered"><small>
+          </small>
+        </div>
+        </div>
+
+  
+  
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">How Does it Work?</h2>
+                    <div class="content has-text-justified">
+                    </div>
+                    <div class="column is-centered has-text-centered">
+                        <img src="static/figures/overview.png" alt="ConceptLab" width="100%"/>
+                    </div>
+                    <ul class="column is-centered has-text-justified">
+                      <li> We represent each operator as a fine-tuned diffusion prior model with is conditioned on image embeddings corresponding to our operator inputs.
+                      </li>
+                      <br>
+                      <li> Training is achieved via a dedicated dataset representing the semantic operation with an optional textual clip loss.
+                      </li>
+                      <br>
+                      <li> The sampled image embedding is then passed to an image-conditioned diffusion model to generate the final result.
+                      <br>
+                    </ul>
+                </div>
+            </div>
+          </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Operator Results</h2>
+
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-three-fifths has-text-centered">
+              <div class="column is-centered has-text-centered">
+                <h4 class="title is-4">Texturing Operator</h4>
+                <img src="static/figures/texturing_results.png" alt="art1" width="100%"/>
+                <div class="content has-text-centered"><small>
+                    Given an image embedding of an object and an image embedding of a texture exemplar, paint the object with the provided texture.
+                  </small>
+                </div>
+              </div>
+              <div class="column is-centered has-text-centered">
+                <h4 class="title is-4">Union Operator</h4>
+                <img src="static/figures/union_results.png" alt="art1" width="100%"/>
+                <div class="content has-text-centered"><small>
+                    Given two image embeddings representing scenes with one or multiple objects, combine the objects appearing in the scenes into a single embedding composed of both objects.
+                  </small>
+                </div>
+              </div>
+            </div>
+      
+            <div class="column is-three-fifths has-text-centered">
+                <div class="column is-centered has-text-centered">
+                  <h4 class="title is-4">Instruct Operator</h4>
+                  <img src="static/figures/instruct_results.png" alt="art1" width="100%"/>
+                  <div class="content has-text-centered"><small>
+                    Given an image embedding of an object and a single-word adjective, apply the adjective to the image embedding, altering its characteristics accordingly.
+                    </small>
+                  </div>
+                </div>
+                <div class="column is-centered has-text-centered">
+                  <h4 class="title is-4">Scene Operator</h4>
+                  <img src="static/figures/scene_results.png" alt="art1" width="100%"/>
+                  <div class="content has-text-centered"><small>
+                    Given an image embedding of an object and an image embedding representing a scene layout, generate an image placing the object within a semantically similar scene.
+                    </small>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <h2 class="title is-3">Anything Else?</h2>
+
+                  <div class="content has-text-centered">
+                  </div>
+                  <h3 class="title is-4">Sampling with Partial Inputs</h3>
+                  <p class="content has-text-centered">
+                    Given only an object or a texture, the pOps texturing operator can successfully sample diverse textured objects when starting from different seeds.
+                  </p>
+              </div>
+          </div>
+            <div class="column is-centered has-text-centered">
+                <img src="static/figures/null_object.png" alt="mix_tree" width="90%"/>
+            </div>
+
+              <br><br>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="content has-text-centered">
+                    </div>
+                    <h3 class="title is-4">Bring your Own Renderer</h3>
+                    <p class="content has-text-centered">
+                        The image embeddings generated by pOps can be fed into different image-conditioned diffusion models, such as Kandinsky or SDXL w/ IP-Adapter.
+                        By feeding our embeddings to IP-Adapater we can also incoporate spatial conditions via pretrained ControlNets. 
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                    <div class="column is-centered has-text-centered">
+                        <img src="static/figures/renderers.png" alt="art1" width="90%"/>
+                        <br>
+                    </div>
+            </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page.
+                        If you want to reuse their <a href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+</html>
