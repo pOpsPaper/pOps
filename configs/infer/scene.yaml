@@ -1,0 +1,6 @@
+prior_path: models/scene/learned_prior.pth
+prior_repo: "pOpsPaper/operators"
+dir_a: assets/objects
+dir_b: assets/backgrounds
+prior_guidance_scale: [1]
+output_dir_name: inference/scene_results

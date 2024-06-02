@@ -1,0 +1,6 @@
+prior_path: models/instruct/learned_prior.pth
+prior_repo: "pOpsPaper/operators"
+dir_a: assets/objects
+prior_guidance_scale: [1]
+output_dir_name: inference/instruct_results
+texts: ['shiny', 'enormous', 'aged']

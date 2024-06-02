@@ -1,0 +1,4 @@
+mode: 'instruct'
+dataset_path: 'datasets/generated/random_objects'
+val_dataset_path: 'assets/objects'
+output_dir: 'results/instruct_experiment'

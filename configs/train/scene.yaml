@@ -1,0 +1,7 @@
+mode: 'scene'
+dataset_path: 'datasets/generated/scenes_data'
+backgrounds_dir: 'datasets/generated/random_backgrounds'
+val_dataset_path: 'assets/objects'
+# Reusing the same textures_dir argument for validation
+textures_dir: 'assets/backgrounds'
+output_dir: 'results/scene_experiment'

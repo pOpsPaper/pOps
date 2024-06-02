@@ -1,0 +1,6 @@
+prior_path: models/union/learned_prior.pth
+prior_repo: "pOpsPaper/operators"
+dir_a: assets/objects
+dir_b: assets/objects
+prior_guidance_scale: [8]
+output_dir_name: inference/union_results

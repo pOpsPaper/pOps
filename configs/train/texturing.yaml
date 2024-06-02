@@ -1,0 +1,5 @@
+mode: 'texture'
+dataset_path: 'datasets/generated/texture_data'
+val_dataset_path: 'assets/objects'
+textures_dir: 'assets/textures'
+output_dir: 'results/texturing_experiment'

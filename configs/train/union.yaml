@@ -1,0 +1,4 @@
+mode: 'union'
+dataset_path: 'datasets/generated/union_data'
+val_dataset_path: 'assets/objects'
+output_dir: 'results/union_experiment'
