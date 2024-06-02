@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```
 
 
-## Inference 
+## Inference 🧑‍🎨
 
 
 
@@ -72,7 +72,7 @@ To run the instruct operator, use the `scripts.infer_instruct` script with the c
 python -m scripts.infer_instruct --config_path=configs/infer/instruct.yaml
 ```
 
-## Training
+## Training 📉
 
 ### Data Generation
 We provide several scripts for data generation under the `data_generation` directory.
@@ -119,4 +119,5 @@ Our codebase heavily relies on the [Kandinsky model](https://github.com/ai-forev
 ## Citation
 If you use this code for your research, please cite the following paper:
 ```
+Coming soon
 ```
