@@ -66,7 +66,6 @@ class pOpsPipeline(DiffusionPipeline):
         )
 
     @torch.no_grad()
-    @replace_example_docstring(EXAMPLE_INTERPOLATE_DOC_STRING)
     def interpolate(
         self,
         images_and_prompts: List[Union[str, PIL.Image.Image, torch.FloatTensor]],
@@ -322,7 +321,6 @@ class pOpsPipeline(DiffusionPipeline):
         self.final_offload_hook = hook
 
     @torch.no_grad()
-    @replace_example_docstring(EXAMPLE_DOC_STRING)
     def __call__(
         self,
         input_embeds: torch.FloatTensor,
