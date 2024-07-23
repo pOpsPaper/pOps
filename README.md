@@ -1,7 +1,7 @@
 # pOps: Photo-Inspired Diffusion Operators
-
  
-> Elad Richardson, Yuval Alaluf, Ali Mahdavi-Amiri, Daniel Cohen-Or
+> Elad Richardson, Yuval Alaluf, Ali Mahdavi-Amiri, Daniel Cohen-Or  
+> Tel Aviv University, Simon Fraser University  
 > 
 > Text-guided image generation enables the creation of visual content from textual descriptions. 
 However, certain visual concepts cannot be effectively conveyed through language alone.  This has sparked a renewed interest in utilizing the CLIP image embedding space for more visually-oriented tasks through methods such as IP-Adapter. Interestingly, the CLIP image embedding space has been shown to be semantically meaningful, where linear operations within this space yield semantically meaningful results. Yet, the specific meaning of these operations can vary unpredictably across different images.
@@ -125,5 +125,10 @@ Our codebase heavily relies on the [Kandinsky model](https://github.com/ai-forev
 ## Citation
 If you use this code for your research, please cite the following paper:
 ```
-Coming soon
+@article{richardson2024pops,
+  title={pOps: Photo-Inspired Diffusion Operators},
+  author={Richardson, Elad and Alaluf, Yuval and Mahdavi-Amiri, Ali and Cohen-Or, Daniel},
+  journal={arXiv preprint arXiv:2406.01300},
+  year={2024}
+}
 ```
