@@ -1,6 +1,8 @@
 # pOps: Photo-Inspired Diffusion Operators
 
  
+> Elad Richardson, Yuval Alaluf, Ali Mahdavi-Amiri, Daniel Cohen-Or
+> 
 > Text-guided image generation enables the creation of visual content from textual descriptions. 
 However, certain visual concepts cannot be effectively conveyed through language alone.  This has sparked a renewed interest in utilizing the CLIP image embedding space for more visually-oriented tasks through methods such as IP-Adapter. Interestingly, the CLIP image embedding space has been shown to be semantically meaningful, where linear operations within this space yield semantically meaningful results. Yet, the specific meaning of these operations can vary unpredictably across different images.
 To harness this potential, we introduce pOps, a framework that trains specific semantic operators directly on CLIP image embeddings. 
@@ -10,7 +12,11 @@ Working directly over image embeddings not only improves our ability to learn se
 We show that pOps can be used to learn a variety of photo-inspired operators with distinct semantic meanings, highlighting the semantic diversity and potential of our proposed approach.
 
 
+<a href="https://arxiv.org/abs/2406.01300"><img src="https://img.shields.io/badge/arXiv-2406.01300-b31b1b.svg" height=20.5></a>
 <a href="https://popspaper.github.io/pOps/"><img src="https://img.shields.io/static/v1?label=Project&message=Website&color=red" height=20.5></a> 
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/pOpsPaper/pOps-space)
+
+
 
 <p align="center">
 <img src="https://popspaper.github.io/pOps/static/figures/teaser_pops.jpg" width="800px"/>  
